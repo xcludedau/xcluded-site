@@ -1,0 +1,15 @@
+XCLUDED V38 PUBLIC WEBSITE — SAFE STATIC LAUNCH
+
+Includes public pages, quote calculator, and email-based appointment enquiries.
+Does NOT include private HQ, API server, Supabase keys, or live payment processing.
+
+TO PUBLISH USING GITHUB PAGES:
+1. Create a new PUBLIC repository (e.g. xcluded-site) on GitHub.
+2. Upload the CONTENTS of this folder to the repository root, not the ZIP itself.
+3. Settings > Pages > Build and deployment > Deploy from a branch > main > /(root) > Save.
+4. Wait for the URL shown in GitHub Pages settings.
+5. Check homepage, film, quote, enquiry, and mobile before sharing publicly.
+6. Do not connect xcluded.com.au until VentraIP approves registration.
+
+IMPORTANT: GitHub Pages repositories/sites are public. Never upload the full development ZIP, private data, secrets, or HQ backend.
+The appointment page opens an email app; it does not take online bookings.

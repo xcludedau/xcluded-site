@@ -1,0 +1,1461 @@
+
+/* XCLUDED — Global styling */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #080808;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 7%;
+    border-bottom: 1px solid #242424;
+}
+
+.logo {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    color: #aaaaaa;
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+/* Homepage hero */
+
+.hero {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 80px 10%;
+}
+
+.eyebrow {
+    color: #999999;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 6vw, 90px);
+    line-height: 1.1;
+    letter-spacing: -3px;
+    margin: 30px 0;
+}
+
+.hero h1 span {
+    color: #888888;
+}
+
+.hero p {
+    color: #aaaaaa;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 17px 30px;
+    border: 1px solid #777777;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #ffffff;
+    color: #080808;
+}
+
+/* Smaller screens */
+
+@media (max-width: 650px) {
+    .navbar {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .hero {
+        padding: 80px 7%;
+    }
+
+    .hero h1 {
+        letter-spacing: -1px;
+    }
+}
+.logo img {
+    width: 300px;
+    height: auto;
+    display: block;
+}
+.navbar {
+    background-color: #000000;
+}
+/* XCLUDED Window Tinting Section */
+
+.tinting-section {
+    background-color: #0b0b0b;
+    padding: 120px 7%;
+    border-top: 1px solid #222;
+}
+
+.section-heading {
+    max-width: 750px;
+    margin-bottom: 70px;
+}
+
+.section-heading h2 {
+    font-size: clamp(42px, 6vw, 80px);
+    line-height: 1.1;
+    letter-spacing: -2px;
+    margin: 25px 0;
+}
+
+.section-heading h2 span {
+    color: #888;
+}
+
+.section-heading p {
+    color: #aaa;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 600px;
+}
+
+.tinting-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.feature {
+    border-top: 1px solid #444;
+    padding-top: 30px;
+}
+
+.feature-number {
+    color: #777;
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+
+.feature h3 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin: 25px 0 15px;
+}
+
+.feature p {
+    color: #999;
+    line-height: 1.7;
+}
+
+/* Mobile screens */
+@media (max-width: 650px) {
+    .tinting-section {
+        padding: 80px 7%;
+    }
+
+    .tinting-features {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+}
+
+/* =========================
+   XCLUDED - OUR FILM PAGE
+========================= */
+
+.film-intro {
+    min-height: 75vh;
+    padding: 140px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #080808;
+}
+.film-eyebrow {
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #888888;
+    margin-bottom: 30px;
+}
+
+.film-intro h1 {
+    font-size: clamp(70px, 10vw, 150px);
+    font-weight: 400;
+    letter-spacing: -4px;
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+.film-intro h2 {
+    font-size: clamp(20px, 3vw, 32px);
+    font-weight: 300;
+    color: #aaaaaa;
+    margin-bottom: 35px;
+}
+
+.film-description {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #888888;
+    max-width: 500px;
+}
+
+/* PRIMA PERFORMANCE SECTION */
+
+.film-benefits {
+    padding: 110px 10% 140px;
+    background-color: #080808;
+    border-top: 1px solid #222222;
+}
+
+.film-benefits h2 {
+    font-size: clamp(30px, 4vw, 54px);
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.film-benefits-description {
+    color: #999999;
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 550px;
+}
+
+.film-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin-top: 90px;
+}
+
+.film-stat {
+    border-top: 1px solid #333333;
+    padding-top: 30px;
+}
+
+.film-stat h3 {
+    font-size: clamp(24px, 3vw, 40px);
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.film-stat p {
+    font-size: 13px;
+    color: #888888;
+}
+
+.film-disclaimer {
+    margin-top: 70px;
+    font-size: 11px;
+    color: #666666;
+}
+
+/* PRIMA MOBILE LAYOUT */
+
+@media (max-width: 650px) {
+    .film-benefits {
+        padding: 80px 7%;
+    }
+
+    .film-stats {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        margin-top: 60px;
+    }
+}
+
+/* =========================
+   XCLUDED - QUOTE CALCULATOR
+========================= */
+
+.quote-section {
+    padding: 120px 10%;
+    background-color: #080808;
+    border-top: 1px solid #222222;
+}
+
+.quote-section h2 {
+    font-size: clamp(36px, 5vw, 60px);
+    font-weight: 400;
+    margin: 25px 0;
+}
+
+.quote-description {
+    color: #999999;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 60px;
+}
+
+.quote-calculator {
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.quote-calculator label {
+    color: #cccccc;
+    font-size: 14px;
+}
+
+.quote-calculator select {
+    width: 100%;
+    padding: 18px;
+    background-color: #111111;
+    color: #ffffff;
+    border: 1px solid #333333;
+    border-radius: 0;
+    font-size: 15px;
+}
+
+.removal-option {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.removal-option input {
+    width: 18px;
+    height: 18px;
+    accent-color: #ffffff;
+}
+
+.quote-result {
+    border-top: 1px solid #333333;
+    margin-top: 25px;
+    padding-top: 40px;
+}
+
+.quote-result > p:first-child {
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #888888;
+}
+
+.quote-result h3 {
+    font-size: clamp(55px, 8vw, 90px);
+    font-weight: 400;
+    margin: 25px 0;
+}
+
+#quoteBreakdown {
+    color: #aaaaaa;
+    font-size: 14px;
+}
+
+.quote-note {
+    color: #777777;
+    font-size: 12px;
+    line-height: 1.8;
+    margin-top: 30px;
+}
+
+/* QUOTE CALCULATOR - MOBILE */
+
+@media (max-width: 650px) {
+    .quote-section {
+        padding: 80px 7%;
+    }
+}
+
+/* XCLUDED - VEHICLE DETAILS */
+
+.vehicle-details {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    margin: 15px 0;
+}
+
+.vehicle-field {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.vehicle-field input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 18px;
+    background-color: #111111;
+    border: 1px solid #333333;
+    border-radius: 0;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.vehicle-field input:focus {
+    outline: 1px solid #888888;
+}
+
+.vehicle-field input::placeholder {
+    color: #666666;
+}
+
+/* Vehicle details on mobile */
+
+@media (max-width: 650px) {
+    .vehicle-details {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* XCLUDED - TINT PREFERENCE */
+
+.tint-preference {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.tint-shade-note {
+    color: #777777;
+    font-size: 12px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* =========================
+   XCLUDED - BOOKING PAGE
+========================= */
+
+.booking-intro {
+    min-height: 85vh;
+    padding: 130px 10%;
+    background-color: #080808;
+    box-sizing: border-box;
+}
+
+.booking-intro h1 {
+    font-size: clamp(55px, 8vw, 110px);
+    font-weight: 400;
+    letter-spacing: -2px;
+    margin: 45px 0 30px;
+}
+
+.booking-description {
+    color: #999999;
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 550px;
+    margin-bottom: 100px;
+}
+
+.booking-placeholder {
+    max-width: 750px;
+    border-top: 1px solid #333333;
+    padding-top: 45px;
+}
+
+.booking-placeholder > p {
+    color: #888888;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 35px;
+}
+
+.booking-placeholder h2 {
+    color: #ffffff;
+    font-size: clamp(30px, 4vw, 48px);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.booking-placeholder span {
+    color: #999999;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* BOOKING PAGE - MOBILE */
+
+@media (max-width: 650px) {
+    .booking-intro {
+        padding: 85px 7%;
+    }
+
+    .booking-description {
+        margin-bottom: 70px;
+    }
+}
+
+/* =========================
+   XCLUDED - BOOKING CALENDAR
+========================= */
+
+.booking-calendar {
+    margin-top: 60px;
+    max-width: 750px;
+}
+
+.calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.calendar-header h3 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.calendar-header button {
+    background: transparent;
+    border: 1px solid #333333;
+    color: #ffffff;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.calendar-header button:hover {
+    background: #ffffff;
+    color: #080808;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.calendar-grid button {
+    background: #111111;
+    border: 1px solid #292929;
+    color: #ffffff;
+    padding: 18px 0;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.calendar-grid button:hover {
+    background: #ffffff;
+    color: #080808;
+}
+
+.calendar-grid button:disabled {
+    color: #555555;
+    background: #0a0a0a;
+    cursor: not-allowed;
+}
+
+.calendar-notice {
+    margin-top: 35px;
+    color: #777777;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+@media (max-width: 650px) {
+    .calendar-grid {
+        gap: 5px;
+    }
+
+    .calendar-grid button {
+        padding: 13px 0;
+        font-size: 12px;
+    }
+
+    .calendar-header h3 {
+        font-size: 19px;
+    }
+}
+.calendar-day-label {
+    color: #888888;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 0;
+}
+
+.calendar-header button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+/* XCLUDED - Calendar date selection */
+
+.calendar-grid button.available-date {
+    color: #ffffff;
+    border-color: #555555;
+}
+
+.calendar-grid button.selected-date {
+    background: #ffffff;
+    color: #080808;
+    border-color: #ffffff;
+}
+
+.selected-booking-date {
+    margin-top: 30px;
+    color: #cccccc;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+/* =========================
+   XCLUDED HQ - COMMAND CENTRE
+========================= */
+
+.hq-dashboard {
+    min-height: 100vh;
+    padding: 100px 10%;
+    background: #080808;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+.hq-header {
+    margin-bottom: 100px;
+}
+
+.hq-header h1 {
+    font-size: clamp(55px, 8vw, 110px);
+    font-weight: 400;
+    letter-spacing: -2px;
+    margin: 30px 0;
+}
+
+.hq-header > p:last-child {
+    color: #999999;
+    font-size: 17px;
+}
+
+.hq-availability {
+    max-width: 850px;
+    border-top: 1px solid #333333;
+    padding-top: 45px;
+}
+
+.hq-section-heading h2 {
+    font-size: clamp(30px, 4vw, 48px);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.hq-section-heading p {
+    color: #999999;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+#hqCalendar {
+    background: #111111;
+    border: 1px solid #292929;
+    padding: 35px;
+    color: #aaaaaa;
+}
+
+@media (max-width: 650px) {
+    .hq-dashboard {
+        padding: 70px 7%;
+    }
+
+    .hq-header {
+        margin-bottom: 70px;
+    }
+
+    #hqCalendar {
+        padding: 20px;
+    }
+}
+
+/* =========================
+   XCLUDED HQ - APPOINTMENT CONTROLS
+========================= */
+
+#hqCalendar label {
+    display: block;
+    color: #cccccc;
+    font-size: 14px;
+    margin: 25px 0 10px;
+}
+
+#hqCalendar input {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    padding: 14px;
+    background: #181818;
+    color: #ffffff;
+    border: 1px solid #444444;
+    font-size: 15px;
+    box-sizing: border-box;
+    color-scheme: dark;
+}
+
+#hqCalendar button {
+    display: inline-block;
+    padding: 15px 25px;
+    margin: 30px 10px 20px 0;
+    background: #ffffff;
+    color: #080808;
+    border: 1px solid #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#hqCalendar button:hover {
+    background: #cccccc;
+}
+
+#closeAppointment {
+    background: transparent !important;
+    color: #ffffff !important;
+    border: 1px solid #555555 !important;
+}
+
+#closeAppointment:hover {
+    background: #252525 !important;
+}
+
+#hqStatus {
+    color: #cccccc;
+    font-size: 14px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #333333;
+}
+
+#hqCalendar .calendar-notice {
+    margin-top: 30px;
+    color: #777777;
+    font-size: 12px;
+}
+
+@media (max-width: 650px) {
+    #hqCalendar input {
+        max-width: 100%;
+    }
+
+    #hqCalendar button {
+        width: 100%;
+        margin: 12px 0 0;
+    }
+}
+
+/* =========================
+   XCLUDED BOOKING TIME SLOTS
+========================= */
+
+.booking-time-slots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.booking-time-button {
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid #444444;
+    padding: 15px 25px;
+    min-width: 120px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.booking-time-button:hover {
+    border-color: #ffffff;
+    background: #1a1a1a;
+}
+
+.booking-time-button.selected-time {
+    background: #ffffff;
+    color: #080808;
+    border-color: #ffffff;
+}
+
+@media (max-width: 650px) {
+    .booking-time-button {
+        flex: 1 1 120px;
+    }
+}
+
+/* =========================
+   XCLUDED HQ - VISUAL CALENDAR
+========================= */
+
+.hq-calendar-panel {
+    background: #111111;
+    border: 1px solid #292929;
+    padding: 35px;
+    margin-bottom: 30px;
+}
+
+.hq-calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.hq-calendar-header h3 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.hq-calendar-header button {
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid #444444;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.hq-calendar-header button:hover {
+    border-color: #ffffff;
+}
+
+.hq-calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 8px;
+}
+
+.hq-calendar-grid button {
+    min-height: 60px;
+    background: #111111;
+    color: #888888;
+    border: 1px solid #333333;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.hq-calendar-grid button:hover {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.hq-calendar-grid .hq-open-date {
+    color: #ffffff;
+    border-color: #777777;
+}
+
+.hq-calendar-grid .hq-selected-date {
+    background: #ffffff;
+    color: #080808;
+}
+
+.hq-calendar-day-label {
+    text-align: center;
+    color: #999999;
+    font-size: 12px;
+    padding-bottom: 15px;
+}
+
+.hq-calendar-help {
+    color: #999999;
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+@media (max-width: 650px) {
+    .hq-calendar-panel {
+        padding: 15px;
+    }
+
+    .hq-calendar-grid {
+        gap: 4px;
+    }
+
+    .hq-calendar-grid button {
+        min-height: 42px;
+        font-size: 12px;
+    }
+
+    .hq-calendar-header h3 {
+        font-size: 19px;
+    }
+}
+
+/* =========================
+   XCLUDED HQ APPOINTMENT LIST
+========================= */
+
+.hq-appointment-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.hq-appointment-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 18px 20px;
+    background: #161616;
+    border: 1px solid #303030;
+}
+
+.hq-appointment-row span {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.hq-remove-slot {
+    background: transparent;
+    color: #bbbbbb;
+    border: 1px solid #555555;
+    padding: 10px 20px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.hq-remove-slot:hover {
+    background: #ffffff;
+    color: #080808;
+    border-color: #ffffff;
+}
+
+@media (max-width: 650px) {
+    .hq-appointment-row {
+        padding: 14px;
+    }
+
+    .hq-remove-slot {
+        padding: 10px 14px;
+    }
+}
+
+/* Hide duplicate HQ appointment list */
+#hqAppointmentList {
+    display: none;
+}
+
+/* =========================
+   XCLUDED CUSTOMER BOOKING FORM
+========================= */
+
+.booking-details[hidden] {
+    display: none !important;
+}
+
+.booking-details {
+    margin-top: 45px;
+    padding: 35px;
+    background: #111111;
+    border: 1px solid #303030;
+}
+
+.booking-details h2 {
+    margin: 15px 0;
+    font-size: clamp(30px, 4vw, 44px);
+}
+
+.booking-details > p {
+    color: #aaaaaa;
+    margin-bottom: 30px;
+}
+
+#bookingForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#bookingForm label {
+    color: #dddddd;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+#bookingForm input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px;
+    background: #191919;
+    color: #ffffff;
+    border: 1px solid #444444;
+    border-radius: 0;
+    font-size: 15px;
+}
+
+#bookingForm input:focus {
+    outline: none;
+    border-color: #ffffff;
+}
+
+#bookingForm button {
+    margin-top: 25px;
+    padding: 18px 24px;
+    background: #ffffff;
+    color: #080808;
+    border: 1px solid #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#bookingForm button:hover {
+    background: #cccccc;
+}
+
+@media (max-width: 650px) {
+    .booking-details {
+        padding: 22px;
+    }
+}
+
+/* XCLUDED BOOKING REQUEST SUMMARY */
+
+#bookingFormMessage {
+    white-space: pre-line;
+    line-height: 1.9;
+    color: #dddddd;
+    font-size: 14px;
+    margin-top: 25px;
+}
+
+#bookingFormMessage:not(:empty) {
+    padding: 24px;
+    background: #191919;
+    border: 1px solid #444444;
+}
+
+/* =========================
+   XCLUDED CUSTOMER DATE INTEREST
+========================= */
+
+.booking-interest {
+    margin-top: 50px;
+    padding: 35px;
+    background: #111111;
+    border: 1px solid #303030;
+}
+
+.booking-interest h2 {
+    margin: 15px 0;
+    font-size: clamp(30px, 4vw, 44px);
+}
+
+.booking-interest > p {
+    color: #aaaaaa;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+#interestForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#interestForm label {
+    color: #dddddd;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+#interestForm input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px;
+    background: #191919;
+    color: #ffffff;
+    border: 1px solid #444444;
+    font-size: 15px;
+    color-scheme: dark;
+}
+
+#interestForm input:focus {
+    outline: none;
+    border-color: #ffffff;
+}
+
+#interestForm button {
+    margin-top: 25px;
+    padding: 18px 24px;
+    background: #ffffff;
+    color: #080808;
+    border: 1px solid #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#interestForm button:hover {
+    background: #cccccc;
+}
+
+#interestMessage {
+    white-space: pre-line;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+#interestMessage:not(:empty) {
+    margin-top: 25px;
+    padding: 24px;
+    background: #191919;
+    border: 1px solid #444444;
+}
+
+@media (max-width: 650px) {
+    .booking-interest {
+        padding: 22px;
+    }
+}
+
+/* =========================
+   XCLUDED HQ CUSTOMER DEMAND
+========================= */
+
+.hq-demand-panel {
+    margin-top: 45px;
+    padding: 35px;
+    background: #111111;
+    border: 1px solid #303030;
+}
+
+.hq-demand-panel h2 {
+    font-size: clamp(30px, 4vw, 42px);
+    margin: 15px 0;
+}
+
+.hq-demand-description {
+    color: #aaaaaa;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.hq-demand-stats {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.hq-demand-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 25px;
+    background: #1a1a1a;
+    border: 1px solid #333333;
+}
+
+.hq-demand-stat span {
+    color: #aaaaaa;
+    font-size: 14px;
+}
+
+.hq-demand-stat strong {
+    color: #ffffff;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.hq-interest-list {
+    border-top: 1px solid #333333;
+    padding-top: 20px;
+    color: #cccccc;
+}
+
+@media (max-width: 650px) {
+    .hq-demand-panel {
+        padding: 22px;
+    }
+
+    .hq-demand-stats {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================
+   XCLUDED HQ DEMAND ROWS
+========================= */
+
+.hq-demand-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid #303030;
+}
+
+.hq-demand-row strong {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.hq-demand-row span {
+    color: #aaaaaa;
+    font-size: 14px;
+    text-align: right;
+}
+
+@media (max-width: 650px) {
+    .hq-demand-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .hq-demand-row span {
+        text-align: left;
+    }
+}
+/* =========================
+   XCLUDED HQ CUSTOMER DEMAND
+========================= */
+
+.hq-demand-details[hidden] {
+    display: none;
+}
+
+.hq-demand-details {
+    display: grid;
+    gap: 12px;
+    padding: 16px 0 24px;
+}
+
+.hq-demand-customer {
+    background: #191919;
+    border: 1px solid #333333;
+    padding: 22px 26px;
+}
+
+.hq-demand-customer strong {
+    display: block;
+    color: #ffffff;
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.hq-demand-customer p {
+    color: #aaaaaa;
+    font-size: 14px;
+    margin: 6px 0;
+}
+
+.hq-demand-row:hover {
+    background: #181818;
+}
+/* =========================
+   XCLUDED HQ REMOVE REQUEST
+========================= */
+
+.hq-remove-request {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 11px 20px;
+
+    background: transparent;
+    color: #aaaaaa;
+
+    border: 1px solid #444444;
+    border-radius: 0;
+
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.hq-remove-request:hover {
+    background: #ffffff;
+    color: #080808;
+    border-color: #ffffff;
+}
+/* Customer-site refinement */
+:root { color-scheme: dark; }
+[hidden] { display: none !important; }
+.navbar { gap: 22px; }
+.navbar nav { flex-wrap: wrap; justify-content: flex-end; gap: 14px 24px; }
+.logo img { max-width: min(300px, 65vw); }
+.info-section { padding: 100px 7%; border-top: 1px solid #282828; }
+.info-section-alt { background: #101010; }
+.info-section h2 { font-size: clamp(32px, 5vw, 60px); letter-spacing: -1.5px; margin: 18px 0; }
+.info-section p { max-width: 700px; color: #aaa; font-size: 17px; line-height: 1.8; }
+.info-section .hero-button { margin-top: 16px; margin-right: 12px; }
+.contact-social a, .site-footer a { color: #fff; }
+.site-footer { padding: 30px 7%; border-top: 1px solid #282828; color: #999; font-size: 13px; }
+.quote-cta { margin-top: 24px; text-align: center; }
+.quote-carryover { padding: 16px; border: 1px solid #555; color: #ddd; margin: 15px 0; line-height: 1.5; }
+#bookingForm select { width: 100%; padding: 14px; background: #151515; color: #fff; border: 1px solid #444; }
+#bookingForm .booking-removal-label { display: flex; align-items: center; gap: 10px; }
+#bookingForm .booking-removal-label input { width: auto; }
+button, a, input, select { touch-action: manipulation; }
+:focus-visible { outline: 2px solid #ddd; outline-offset: 3px; }
+@media(max-width:650px) {
+  .navbar { padding: 20px 5%; }
+  .navbar nav { justify-content: center; gap: 14px 18px; }
+  .logo img { width: min(250px, 70vw); }
+  .hero { min-height: 65vh; }
+  .info-section { padding: 70px 7%; }
+  .quote-calculator, .booking-placeholder { max-width: 100%; }
+}
+
+/* V4 customer journey refinements */
+.quote-validation { color: #ffd2d2; border-left: 2px solid #e9aaaa; padding: 10px 14px; line-height: 1.5; }
+.booking-message { white-space: pre-line; max-width: 700px; margin: 22px auto; line-height: 1.6; }
+#bookingFormMessage:not(:empty) { white-space: pre-line; }
+@media (max-width: 650px) {
+  .navbar nav a { padding: 6px 2px; }
+  .quote-cta { display: block; }
+  .calendar-header { gap: 8px; }
+  .calendar-header h3 { text-align: center; }
+}
+
+/* Connected HQ — premium responsive local development dashboard */
+.connected-hq {background:#090909;color:#f5f5f5;min-height:100vh;}
+.connected-hq * {box-sizing:border-box;}
+.connected-hq-header {min-height:88px;padding:18px max(5%, calc((100% - 1200px)/2));display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid #262626;}
+.connected-hq-header img {display:block;width:170px;max-height:54px;object-fit:contain;object-position:left center;}
+.connected-hq-header span,.connected-hq .eyebrow,.connected-hq-footer {font-size:11px;letter-spacing:3px;color:#a6a6a6;}
+.connected-hq-main {max-width:1200px;margin:auto;padding:65px 5% 80px;}
+.connected-hq-intro {padding-bottom:35px;}
+.connected-hq-intro h1 {font-size:clamp(42px,6vw,76px);line-height:1.08;letter-spacing:-2px;margin:20px 0;}
+.connected-hq-intro>p:last-child {color:#aaa;max-width:650px;line-height:1.8;}
+.connected-hq-panel {padding:35px;margin:22px 0;background:#111;border:1px solid #303030;}
+.connected-hq-panel h2 {font-size:clamp(25px,3vw,36px);margin:12px 0 25px;}
+.connected-hq-panel h3 {font-size:17px;margin:35px 0 18px;}
+.connected-hq-panel label {display:block;font-size:13px;color:#ccc;margin:0 0 9px;}
+.connected-hq-panel input {min-width:0;width:100%;padding:14px 15px;background:#1a1a1a;border:1px solid #444;color:#fff;font:inherit;border-radius:0;}
+.connected-hq-panel button {padding:14px 18px;background:#f5f5f5;border:1px solid #f5f5f5;color:#080808;font:inherit;font-size:12px;letter-spacing:.5px;cursor:pointer;}
+.connected-hq-panel button:hover {background:#d5d5d5;}
+.connected-hq-access {display:grid;grid-template-columns:1fr auto;gap:10px;align-items:end;max-width:660px;}
+.connected-hq-access label {grid-column:1/-1;margin-bottom:0;}
+.connected-hq-slot-form {display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) auto;gap:15px;align-items:end;}
+.connected-hq-panel #status {color:#c6c6c6;font-size:13px;line-height:1.6;min-height:20px;}
+.connected-hq-results>p {padding:15px 0;margin:0;border-bottom:1px solid #303030;color:#ccc;line-height:1.6;}
+.connected-hq-results>p button {margin-left:15px;background:transparent;color:#fff;border-color:#555;padding:9px 13px;}
+.connected-hq-bookings {display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:16px;}
+.connected-hq-bookings .hq-demand-customer {margin:0;padding:25px;background:#181818;border:1px solid #363636;min-width:0;overflow-wrap:anywhere;}
+.connected-hq-bookings .hq-demand-customer p {line-height:1.6;margin:7px 0;color:#ccc;}
+.connected-hq-bookings .hq-demand-customer button {margin:12px 8px 0 0;}
+.connected-hq-footer {padding:30px 0;text-align:center;border-top:1px solid #333;line-height:1.8;}
+@media(max-width:650px){.connected-hq-header {padding:15px 5%;}.connected-hq-header img {width:125px;}.connected-hq-header span {font-size:9px;letter-spacing:1px;}.connected-hq-main {padding-top:40px;}.connected-hq-panel {padding:22px 18px;}.connected-hq-slot-form {grid-template-columns:1fr;}.connected-hq-access {grid-template-columns:1fr;}.connected-hq-results>p button {margin:10px 0 0;display:block;}.connected-hq-intro h1 {letter-spacing:-1px;}}
+
+/* Connected HQ customer directory */
+.connected-hq-customer { border: 1px solid rgba(255,255,255,.2); border-radius: 12px; padding: 1rem; margin: .75rem 0; }
+.connected-hq-customer summary { cursor: pointer; font-weight: 700; }
+.connected-hq-vehicle { border-top: 1px solid rgba(255,255,255,.15); padding: .75rem 0; overflow-wrap: anywhere; }
+.connected-hq-vehicle p { margin: .3rem 0; }
+#customerSearch { width: 100%; max-width: 480px; padding: .85rem; margin: .5rem 0 1rem; }
+
+/* V20: owner-only local backup control */
+.connected-hq-backup{margin-top:1.2rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,.12)}
+.connected-hq-backup p{font-size:.85rem;opacity:.75;max-width:65ch}
+
+/* V23 owner activity history */
+#activitySearch{max-width:480px} .connected-hq-activity-item{overflow-wrap:anywhere;font-size:13px} #activityCount{color:#aaa;font-size:13px}
+
+/* V24 — customer-facing finishing polish */
+:root { --xcluded-edge: rgba(255,255,255,.16); }
+body { -webkit-font-smoothing: antialiased; }
+.navbar { position: relative; z-index: 2; background: #090909; }
+.navbar nav a { line-height: 1.5; }
+.navbar nav a[aria-current="page"] { color: #fff; text-decoration: underline; text-decoration-color: #777; text-underline-offset: 7px; }
+.hero-button, button { transition: background-color .2s ease, color .2s ease, border-color .2s ease, transform .2s ease; }
+.hero-button:hover { transform: translateY(-1px); }
+.hero-button:active { transform: translateY(0); }
+.site-footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 25px; line-height: 1.7; }
+.site-footer a { text-underline-offset: 3px; }
+.quote-note, .film-disclaimer, .tint-shade-note { line-height: 1.65; }
+input, select, textarea, button { max-width: 100%; }
+@media (max-width: 900px) {
+  .navbar { flex-wrap: wrap; justify-content: center; }
+  .navbar nav { width: 100%; justify-content: center; }
+}
+@media (max-width: 650px) {
+  .hero h1 { letter-spacing: -1.5px; }
+  .navbar nav { gap: 8px 15px; }
+  .navbar nav a { font-size: 12px; min-height: 36px; display: inline-flex; align-items: center; }
+  .site-footer { justify-content: center; text-align: center; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+}
+
+/* V25 — multi-page customer website */
+.navbar { gap: 28px; padding: 22px 5%; }
+.logo { flex: 0 0 auto; display: flex; align-items: center; }
+.logo img { display:block; width:clamp(170px, 18vw, 260px); max-width:100%; height:auto; }
+.navbar nav { display:flex; flex-wrap:wrap; gap:12px 23px; justify-content:flex-end; align-items:center; }
+.navbar nav a { white-space:nowrap; }
+.navbar nav a[aria-current="page"] { color:white; border-bottom:1px solid #aaa; padding-bottom:5px; text-decoration:none; }
+.v25-home-links { padding:90px 10%; border-top:1px solid #252525; }
+.v25-home-links h2 { font-size:clamp(30px,5vw,58px); letter-spacing:-1px; }
+.v25-home-links p { max-width:650px; color:#aaa; line-height:1.7; }
+.v25-actions { display:flex; flex-wrap:wrap; gap:14px; margin-top:28px; }
+.v25-actions .hero-button { margin:0; }
+.film-intro { min-height: 60vh; padding-top:100px; padding-bottom:80px; }
+.site-footer { padding:30px 7%; }
+@media(max-width:950px) { .navbar { flex-direction:column; align-items:center; } .navbar nav { justify-content:center; } }
+@media(max-width:600px) { .navbar { padding:18px 5%; } .logo img { width:210px; } .navbar nav { gap:8px 15px; } .navbar nav a { font-size:12px; } .v25-home-links { padding:65px 7%; } .film-intro { min-height:unset; padding-top:75px; } }

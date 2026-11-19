@@ -1,0 +1,72 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#080808"><meta name="description" content="XCLUDED premium automotive window tinting in the Lockyer Valley."><title>Get a Quote | XCLUDED</title><link rel="stylesheet" href="style.css"></head><body><header class="navbar"><a class="logo" href="index.html" aria-label="XCLUDED home"><img src="images/xcluded-logo-transparent.png" alt="XCLUDED"></a><nav aria-label="Main navigation"><a href="index.html">Home</a><a href="tinting.html">Window Tinting</a><a href="film.html">Our Film</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="quote.html" aria-current="page">Get a Quote</a><a href="booking.html">Book Now</a></nav></header><main><section class="quote-section" id="quote">
+<p class="eyebrow">THE XCLUDED EXPERIENCE</p>
+<h2>Find your finish.</h2>
+<p class="quote-description">
+        Premium window tinting. Transparent pricing.
+        Get an instant estimate for your vehicle.
+    </p>
+<div class="quote-calculator">
+<label for="vehicleType">Your vehicle</label>
+<select id="vehicleType">
+<option value="singleCab">Single Cab Ute</option>
+<option value="hatchback">Hatchback</option>
+<option selected="" value="sedan">Sedan</option>
+<option value="dualCab">Dual Cab Ute</option>
+<option value="suv">SUV / Wagon</option>
+<option value="large4wd">Large 4WD / 7-Seater</option>
+</select>
+<!-- Vehicle Details -->
+<div class="vehicle-details">
+<div class="vehicle-field">
+<label for="vehicleMake">Vehicle Make</label>
+<input autocomplete="off" id="vehicleMake" maxlength="50" placeholder="e.g. Ford" type="text"/>
+</div>
+<div class="vehicle-field">
+<label for="vehicleModel">Vehicle Model</label>
+<input autocomplete="off" id="vehicleModel" maxlength="80" placeholder="e.g. Ranger" type="text"/>
+</div>
+<div class="vehicle-field">
+<label for="vehicleYear">Vehicle Year</label>
+<input id="vehicleYear" max="2031" min="1950" placeholder="e.g. 2020" type="number"/>
+</div>
+<!-- Tint Darkness Preference -->
+<div class="tint-preference">
+<label for="tintShade">Preferred Tint Darkness</label>
+<select id="tintShade">
+<option selected="" value="unsure">
+            Not sure yet - Help me choose
+        </option>
+<option value="35">35% - Light</option>
+<option value="20">20% - Medium Dark</option>
+<option value="15">15% - Dark</option>
+<option value="5">5% - Very Dark</option>
+</select>
+<p class="tint-shade-note">
+        Not sure which shade suits your vehicle?
+        We'll help you choose. All installations
+        are subject to applicable legal requirements.
+    </p>
+</div>
+</div>
+<label class="removal-option">
+<input id="tintRemoval" type="checkbox"/>
+            Existing tint removal required
+        </label>
+<div class="quote-result">
+<p>YOUR ESTIMATED PRICE</p>
+<h3 id="quoteTotal">$400</h3>
+<p id="quoteBreakdown">
+                Vehicle tinting: $400 | Removal: $0
+            </p>
+<p class="quote-note">
+                Estimates are subject to vehicle inspection
+                and final confirmation.
+                After your request is approved, a $50 deposit will be requested and credited towards your agreed total.
+            </p>
+</div>
+<p class="quote-validation" hidden="" id="quoteValidation" role="alert"></p>
+<p class="quote-note">The estimate updates as you choose a vehicle category or tint removal. Film shade does not change the displayed price.</p>
+<a class="hero-button quote-cta" href="booking.html" id="quoteBookingLink">REQUEST AN APPOINTMENT</a>
+<p class="quote-note">Your vehicle details and estimate carry through to your appointment request. All appointments are subject to confirmation by XCLUDED.</p>
+</div>
+</section></main><footer class="site-footer"><span>© XCLUDED · Automotive window tinting</span><span><a href="mailto:xcluded.au@gmail.com">Email</a> · <a href="https://www.instagram.com/xcluded.au/" target="_blank" rel="noopener noreferrer">Instagram</a></span></footer><script src="script.js"></script></body></html>
