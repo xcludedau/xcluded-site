@@ -1464,3 +1464,55 @@ input, select, textarea, button { max-width: 100%; }
 .skip-link{position:absolute;top:-80px;left:16px;z-index:9999;background:#fff;color:#000;padding:12px 16px;text-decoration:none}
 .skip-link:focus{top:12px}
 a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid #ddd;outline-offset:4px}
+
+/* V40: customer enquiry experience */
+.enquiry-section{padding:75px 7% 110px;background:#0c0c0c;border-top:1px solid #292929}
+.enquiry-heading{max-width:760px;margin-bottom:38px}.enquiry-heading h2{font-size:clamp(32px,5vw,56px);letter-spacing:-1.4px;margin:12px 0}.enquiry-heading p:not(.eyebrow){color:#b5b5b5;line-height:1.7}
+.enquiry-form{max-width:1050px;border:1px solid #303030;background:#111;padding:clamp(20px,4vw,48px)}
+.enquiry-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.enquiry-form label{display:flex;flex-direction:column;gap:9px;color:#e7e7e7;font-size:13px;letter-spacing:.03em}
+.enquiry-form input:not([type=checkbox]),.enquiry-form select,.enquiry-form textarea{width:100%;min-width:0;padding:15px;background:#191919;color:#fff;border:1px solid #454545;border-radius:0;font:inherit;letter-spacing:normal}
+.enquiry-form input::placeholder,.enquiry-form textarea::placeholder{color:#888}.enquiry-form select{color-scheme:dark}
+.enquiry-wide{margin-top:24px}.enquiry-form textarea{resize:vertical}
+.enquiry-form .enquiry-consent{display:flex;flex-direction:row;align-items:flex-start;gap:12px;margin-top:24px;line-height:1.6;color:#bcbcbc;letter-spacing:normal}.enquiry-consent input{margin-top:4px;flex:none;accent-color:#eee}
+.enquiry-note{font-size:13px;color:#a9a9a9;line-height:1.8;margin:24px 0}.enquiry-note a{color:#eee}
+.enquiry-actions{display:flex;flex-wrap:wrap;gap:14px;align-items:center}.enquiry-actions .hero-button{cursor:pointer;margin:0}.enquiry-secondary{padding:15px 24px;background:transparent;border:1px solid #777;color:#fff;cursor:pointer;font:inherit;font-size:12px;letter-spacing:.08em}
+.enquiry-feedback{min-height:22px;color:#dedede;font-size:14px;line-height:1.6;margin:18px 0 0}
+@media(max-width:650px){.enquiry-section{padding:55px 6% 80px}.enquiry-grid{grid-template-columns:1fr;gap:18px}.enquiry-actions>*{width:100%;text-align:center}}
+
+/* V41: film education; retain existing brand palette and typography */
+.film-education{padding:90px 7%;background:#0a0a0a;border-top:1px solid #282828}
+.film-education>h2{font-size:clamp(38px,5vw,66px);line-height:1.08;margin:18px 0 20px;color:#fff}
+.film-education-lead{max-width:780px;color:#b7b7b7;font-size:18px;line-height:1.8;margin-bottom:48px}
+.film-education-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;max-width:1250px}
+.film-education-card{padding:clamp(24px,3vw,40px);border:1px solid #303030;background:#111}
+.film-card-number{font-size:11px;letter-spacing:.2em;color:#a4a4a4;margin-bottom:20px}
+.film-education-card h3{font-size:clamp(22px,2.4vw,30px);line-height:1.2;margin:0 0 22px;color:#fff}
+.film-education-card p:not(.film-card-number){color:#b7b7b7;line-height:1.8;margin:0 0 14px}
+.film-education>.film-disclaimer{max-width:1000px;margin-top:32px}
+@media(max-width:700px){.film-education{padding:65px 6%}.film-education-grid{grid-template-columns:1fr}.film-education-lead{font-size:16px}}
+
+/* V42: native, accessible film FAQ accordion */
+.film-faq{padding:90px 7% 100px;background:#0d0d0d;border-top:1px solid #292929}
+.film-faq>h2{font-size:clamp(36px,5vw,64px);line-height:1.1;margin:18px 0;color:#fff}
+.film-faq-lead{max-width:720px;color:#b7b7b7;line-height:1.8;margin:0 0 40px}
+.film-faq-list{max-width:1050px;border-top:1px solid #353535}
+.film-faq-list details{border-bottom:1px solid #353535}
+.film-faq-list summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:25px 4px;font-size:clamp(17px,2vw,22px);font-weight:600;color:#f3f3f3;line-height:1.4}
+.film-faq-list summary::-webkit-details-marker{display:none}
+.film-faq-list summary:after{content:'+';font-size:28px;font-weight:300;color:#aaa;flex:none}
+.film-faq-list details[open] summary:after{content:'−'}
+.film-faq-list summary:hover{color:#fff}
+.film-faq-list summary:focus-visible{outline:2px solid #ddd;outline-offset:4px}
+.film-faq-answer{padding:0 50px 24px 4px;max-width:850px}
+.film-faq-answer p{color:#bcbcbc;line-height:1.85;margin:0}
+.film-faq-footnote{max-width:950px;color:#929292;font-size:13px;line-height:1.7;margin-top:32px}
+@media(max-width:700px){.film-faq{padding:65px 6% 75px}.film-faq-list summary{padding:21px 2px}.film-faq-answer{padding-right:20px}}
+
+/* V43: PRIMA manufacturer facts and shade comparison */
+.film-stat h3{font-size:clamp(35px,4vw,60px);letter-spacing:-.04em}.film-stat-detail{display:block;color:#8f8f8f;font-size:12px;line-height:1.5;margin-top:10px}
+.prima-shades,.prima-tech{padding:90px 7%;border-top:1px solid #292929;background:#080808}.prima-tech{background:#0c0c0c}.prima-shades h2,.prima-tech h2{font-size:clamp(36px,5vw,64px);line-height:1.1;margin:18px 0;color:#fff}.prima-lead{max-width:850px;color:#b9b9b9;line-height:1.8;margin-bottom:36px}.prima-shade-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.prima-shade{border:1px solid #303030;background:#111;padding:22px;min-width:0}.prima-signature{border-color:#aaa;background:#161616}.prima-shade-swatch{display:block;height:85px;margin-bottom:24px;border:1px solid #444;background:linear-gradient(120deg,#222,#080808)}.swatch-15{background:linear-gradient(120deg,#393939,#101010)}.swatch-20{background:linear-gradient(120deg,#4a4a4a,#171717)}.swatch-35{background:linear-gradient(120deg,#707070,#282828)}.prima-shade h3{font-size:clamp(26px,3vw,38px);margin:0 0 12px}.prima-shade h3 small{display:block;font-size:10px;letter-spacing:.17em;color:#aaa;margin-top:8px}.prima-shade>p:not(.film-card-number){color:#b5b5b5;min-height:56px;line-height:1.5}.prima-shade dl{margin:24px 0 0}.prima-shade dl div{display:flex;justify-content:space-between;gap:8px;padding:12px 0;border-top:1px solid #303030}.prima-shade dt{color:#aaa}.prima-shade dd{margin:0;color:#fff;font-weight:600}.prima-note{font-size:13px;color:#999;line-height:1.8;margin-top:25px;max-width:1050px}.prima-tech details{max-width:1100px;border:1px solid #363636;padding:22px}.prima-tech summary{cursor:pointer;color:#fff;font-size:18px}.prima-tech summary:focus-visible{outline:2px solid white;outline-offset:4px}.prima-table-scroll{overflow-x:auto;margin-top:25px}.prima-tech table{border-collapse:collapse;width:100%;min-width:680px;text-align:left}.prima-tech caption{text-align:left;color:#aaa;padding:0 0 15px}.prima-tech th,.prima-tech td{border-bottom:1px solid #383838;padding:14px;color:#ddd}.prima-tech thead th{color:#fff}.prima-tech tbody th{white-space:nowrap}
+@media(max-width:1000px){.prima-shade-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:600px){.prima-shades,.prima-tech{padding:65px 6%}.prima-shade-grid{grid-template-columns:1fr}.prima-shade>p:not(.film-card-number){min-height:0}}
+
+.enquiry-honeypot{position:absolute!important;left:-9999px!important;width:1px;height:1px;overflow:hidden}
+.enquiry-actions button:disabled{opacity:.55;cursor:wait}
