@@ -99,5 +99,13 @@ if (quoteBookingLink) {
             removal: removalCheckbox.checked,
             quote: quote
         }));
+        const params = new URLSearchParams({
+            year, make, model,
+            shade: document.getElementById("tintShade").value,
+            vehicleType: vehicleSelect.value,
+            removal: removalCheckbox.checked ? "Yes" : "No",
+            estimate: String(quote.total)
+        });
+        quoteBookingLink.href = "booking.html?" + params.toString();
     });
 }

@@ -1,0 +1,12 @@
+XCLUDED V39 — Brand Identity Refinement
+
+- Repositioned XCLUDED as an automotive lifestyle and customisation brand, with tinting as its first current service.
+- Updated About page and homepage wording.
+- Updated footer across all seven pages.
+- Clarified that appointments are email enquiries, not confirmed bookings.
+- Fixed quote-to-enquiry handoff: vehicle details, shade, removal and estimate now pass via booking URL to prefilled email.
+- Added keyboard skip link and visible focus outlines.
+- Preserved existing CNAME, GitHub Pages layout, pricing, logos and contact details.
+
+DEPLOY: Upload changed files to the repository root (not the containing folder). Keep CNAME intact.
+Do not upload private HQ/backend code or credentials.
